@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App @Abhinav</title>
+    <link rel="stylesheet" href="Quiz.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+    <div class="start_btn"><button>Start Quiz</button></div>
+    <div class="info_box">
+        <div class="info-title"><span><strong>Read carefully before Starting Quiz</strong></span></div>
+        <div class="info-list">
+            <div class="info">1. You will have only <span>15 seconds</span> per each question.</div>
+            <div class="info">2. There Will be 10 Questions in this quiz</div>
+            <div class="info">3. Once you select your answer, it can't be changed.</div>
+            <div class="info">4. You can't come back to that question after the time has passed.</div>
+            <div class="info">5. You can't exit from the Quiz while the quiz is running.</div>
+            <div class="info">6. You'll get points on the basis of your correct answers.</div>
+        </div>
+        <div class="buttons">
+            <button class="quit">Exit Quiz</button>
+            <button class="restart">Continue</button>
+        </div>
+    </div>
+
+    <div class="quiz_box">
+        <header>
+            <div class="title">Quiz Application</div>
+            <div class="timer">
+                <div class="time_left_txt">Time Left</div>
+                <div class="timer_sec">15</div>
+            </div>
+            <div class="time_line"></div>
+        </header>
+        <section>
+            <div class="que_text">
+            </div>
+            <div class="option_list">
+            </div>
+        </section>
+        <footer>
+            <div class="total_que">
+            </div>
+            <button class="next_btn">Next Question</button>
+        </footer>
+    </div>
+    <div class="result_box">
+        <div class="icon">
+            <i class="fas fa-crown"></i>
+        </div>
+        <div class="complete_text">You've completed the Quiz!</div>
+        <div class="score_text">
+        </div>
+        <div class="buttons">
+            <button class="restart">Restart Quiz</button>
+            <button class="quit">Exit Quiz</button>
+        </div>
+    </div>
+
+    <script src="js/questionset.js"></script>
+    <script src="js/Quiz.js"></script>
+
+</body>
+</html>
